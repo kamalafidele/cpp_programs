@@ -110,7 +110,7 @@ vector<string> extractDiseases(vector<string> diseases) {
     vector<string> extractedDiseases;
     for (int i = 0; i < diseases.size(); i++) {
         vector<string> tokenized = tokenizeStr(diseases.at(i));
-        extractedDiseases.push_back(tokenized[0]);
+        extractedDiseases.push_back(tokenized[1]);
     }
 
     return extractedDiseases;
