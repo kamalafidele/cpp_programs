@@ -4,18 +4,20 @@
 using namespace std;
 
 void selectionSort(int* arr, int arrLength) {
-    for (int i = 0; i < arrLength; i++) {
+    for(int i = 0; i < arrLength; i++ ) {
         int minimum = i;
         for (int j = i + 1; j < arrLength; j++) {
-            if (arr[j] < arr[minimum])
-               minimum = j;
+            if (arr[j] < arr[minimum]) {
+                minimum = j;
+            }
         }
 
         if (minimum != i) {
-            int temp = arr[i];
-            arr[i] = arr[minimum];
-            arr[minimum] = temp;
+          int temp = arr[i];
+          arr[i] = arr[minimum];
+          arr[minimum] = temp;
         }
+
     }
 };
 

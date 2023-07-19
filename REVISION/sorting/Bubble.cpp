@@ -5,8 +5,8 @@ using namespace std;
 
 void bubbleSort(int* arr, int arrLength) {
     for (int i = 0; i < arrLength; i++) {
-        for (int j = 0; j < arrLength; j++) {
-            if (arr[i] < arr[j]) {
+        for (int j = 0; j < arrLength; j ++) {
+            if (arr[j] > arr[i]) {
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
